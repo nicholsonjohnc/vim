@@ -65,7 +65,7 @@ set nu
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
-filetype plugin indent on    " required
-
 set t_Co=256
-colorscheme codedark
+source ~/.vim/bundle/vim-code-dark/colors/codedark.vim
+
+filetype plugin indent on    " required
