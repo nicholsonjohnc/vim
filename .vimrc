@@ -68,7 +68,7 @@ call plug#end()
 "   syntax off            " Disable syntax highlighting
 
 set t_Co=256
-colorscheme slate
+colorscheme codedark
 
 
 
