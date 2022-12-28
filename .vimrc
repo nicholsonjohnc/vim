@@ -1,46 +1,27 @@
-set nocompatible              " required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'nvie/vim-flake8'
-Plugin 'tomasiser/vim-code-dark'
-Plugin 'kien/ctrlp.vim'
-
-" add all your plugins here (note older versions of Vundle
-" used Bundle instead of Plugin)
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
 set autoread
 set hlsearch
 
+" Set split options
 set splitbelow
 set splitright
 
-"split navigations
+" Map split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Map explore
 nnoremap <C-E> :Explore<CR>
-
-" Enable folding
-set foldmethod=indent
-set foldlevel=99
-
-" Enable folding with the spacebar
-nnoremap <space> za
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4
@@ -51,19 +32,50 @@ au BufNewFile,BufRead *.py
     \ autoindent
     \ fileformat=unix
 
+" Set encoding
 set encoding=utf-8
 
-let g:ycm_autoclose_preview_window_after_completion=1
+" Set numbers on
+set nu
+
+Plug 'tmhedberg/SimpylFold'
+" Set folding options
+set foldmethod=indent
+set foldlevel=99
+" Map folding to spacebar
+nnoremap <space> za
+
+Plug 'vim-scripts/indentpython.vim'
+Plug 'davidhalter/jedi-vim'
+
+" Check syntax on save
+Plug 'vim-syntastic/syntastic'
+
+" Add PEP 8 checking
+Plug 'nvie/vim-flake8'
 
 let python_highlight_all=1
 syntax on
 
-set nu
+Plug 'tomasiser/vim-code-dark'
+Plug 'kien/ctrlp.vim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
 
 set t_Co=256
-colorscheme blue
+colorscheme slate
 
-filetype plugin indent on    " required
+
+
+
+
+
+
+
+
+
