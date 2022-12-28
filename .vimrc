@@ -12,7 +12,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'tomasiser/vim-code-dark'
@@ -63,6 +63,6 @@ set nu
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
-colorscheme codedark
+" colorscheme codedark
 
 filetype plugin indent on    " required
