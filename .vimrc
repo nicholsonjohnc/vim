@@ -66,6 +66,6 @@ set nu
 call vundle#end()            " required
 
 set t_Co=256
-colorscheme slate
+colorscheme codedark
 
 filetype plugin indent on    " required
