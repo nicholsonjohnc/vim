@@ -21,8 +21,6 @@ Plugin 'kien/ctrlp.vim'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
-" colorscheme codedark
-
 set autoread
 set hlsearch
 
@@ -66,6 +64,6 @@ set nu
 call vundle#end()            " required
 
 set t_Co=256
-source ~/.vim/bundle/vim-code-dark/colors/codedark.vim
+colorscheme blue
 
 filetype plugin indent on    " required
