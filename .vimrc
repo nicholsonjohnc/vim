@@ -65,7 +65,7 @@ set nu
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
+filetype plugin indent on    " required
+
 set t_Co=256
 colorscheme codedark
-
-filetype plugin indent on    " required
