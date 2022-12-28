@@ -7,7 +7,7 @@ call plug#begin()
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 "   - Avoid using standard Vim directory names like 'plugin'
 
-set autoread
+" Set highlight search
 set hlsearch
 
 " Set split options
@@ -35,7 +35,7 @@ au BufNewFile,BufRead *.py
 " Set encoding
 set encoding=utf-8
 
-" Set numbers on
+" Set line numbers
 set nu
 
 Plug 'tmhedberg/SimpylFold'
