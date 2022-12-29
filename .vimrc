@@ -59,8 +59,10 @@ Plug 'nvie/vim-flake8'
 let python_highlight_all=1
 syntax on
 
-" Plug 'tomasiser/vim-code-dark'
 Plug 'kien/ctrlp.vim'
+
+" Add code commenting
+Plug 'preservim/nerdcommenter'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
