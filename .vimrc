@@ -57,7 +57,7 @@ Plug 'nvie/vim-flake8'
 let python_highlight_all=1
 syntax on
 
-Plug 'tomasiser/vim-code-dark'
+" Plug 'tomasiser/vim-code-dark'
 Plug 'kien/ctrlp.vim'
 
 " Initialize plugin system
