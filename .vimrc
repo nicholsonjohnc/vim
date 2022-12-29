@@ -46,7 +46,9 @@ set foldlevel=99
 nnoremap <space> za
 
 Plug 'vim-scripts/indentpython.vim'
-Plug 'davidhalter/jedi-vim'
+
+Plug 'Valloric/YouCompleteMe'
+let g:ycm_autoclose_preview_window_after_completion=1
 
 " Check syntax on save
 Plug 'vim-syntastic/syntastic'
