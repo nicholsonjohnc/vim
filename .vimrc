@@ -62,7 +62,7 @@ syntax on
 Plug 'kien/ctrlp.vim'
 
 " Add code commenting
-Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-commentary'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
